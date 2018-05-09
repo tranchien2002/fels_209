@@ -46,6 +46,10 @@ vi:
   devise:
     sign_up: "Đăng ký"
     sign_in: "Đăng nhập"
+    email: "Tài khoản"
+    password: "Mật khẩu"
+    password_confirm: "Xác nhận mật khẩu"
+    password_current: "Mật khẩu hiện tại"
   datatables:
     lengthMenu1: "Hiển thị "
     lengthMenu2: " bản ghi mỗi trang"

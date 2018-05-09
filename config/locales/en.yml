@@ -46,6 +46,10 @@ en:
   devise:
     sign_up: "Sign up"
     sign_in: "Sign in"
+    email: "Email"
+    password: "Password"
+    password_confirm: "Password confirmation"
+    password_current: "Current password"
   datatables:
     lengthMenu1: "Display "
     lengthMenu2: " records per page"

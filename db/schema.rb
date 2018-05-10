@@ -10,6 +10,63 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema.define(version: 20180510010941) do
+
+  create_table "activities", force: :cascade do |t|
+    t.string "event"
+    t.string "object", default: "f"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_activities_on_user_id"
+  end
+
+  create_table "answers", force: :cascade do |t|
+    t.string "content"
+    t.boolean "correct"
+    t.integer "word_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["word_id"], name: "index_answers_on_word_id"
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lesson_results", force: :cascade do |t|
+    t.integer "word_id"
+    t.integer "lesson_id"
+    t.integer "aswer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["aswer_id"], name: "index_lesson_results_on_aswer_id"
+    t.index ["lesson_id"], name: "index_lesson_results_on_lesson_id"
+    t.index ["word_id"], name: "index_lesson_results_on_word_id"
+  end
+
+  create_table "lessons", force: :cascade do |t|
+    t.integer "status"
+    t.integer "category_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_lessons_on_category_id"
+    t.index ["user_id"], name: "index_lessons_on_user_id"
+  end
+
+  create_table "relations", force: :cascade do |t|
+    t.integer "follower_id"
+    t.integer "followed_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["followed_id"], name: "index_relations_on_followed_id"
+    t.index ["follower_id", "followed_id"], name: "index_relations_on_follower_id_and_followed_id", unique: true
+    t.index ["follower_id"], name: "index_relations_on_follower_id"
+  end
+
 ActiveRecord::Schema.define(version: 20180509035351) do
 
   create_table "users", force: :cascade do |t|
@@ -29,4 +86,10 @@ ActiveRecord::Schema.define(version: 20180509035351) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "words", force: :cascade do |t|
+    t.string "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+end
 end

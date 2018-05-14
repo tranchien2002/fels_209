@@ -1,1 +1,58 @@
 en:
+  views:
+    button:
+      edit_confirm: "Are you sure? "
+      done: "Done"
+      cancel_account: "Cancel account"
+      back: "Back"
+    admin:
+      id: "ID"
+      users:
+        password_edit: "we need your current password to confirm your changes"
+        find_error: "Can't find user with id: "
+        create: "Create user"
+        edit: "Edit"
+        name: "Name"
+        role: "Role"
+        email: "Email"
+        created_at: "Created at"
+        delete: "Delete"
+      category:
+        find_error: "Can't find category with id: "
+        create: "Create category"
+        edit: "Edit"
+        name: "Name"
+        created_at: "Created at"
+        delete: "Delete"
+    layouts:
+      success: "Success"
+      fail: "Fail"
+      search_form:
+        placeholder1: "Find user...."
+        placeholder2: "Find request..."
+        submit: "Search"
+      header:
+        signin: "Sign in"
+        signout: "Sign out"
+        signup: "Sign up"
+        profile: "Profile"
+        notification: "Notification"
+        vi: "Vietnamese"
+        en: "English"
+        language: "Language"
+        create_request: "Create request"
+        view_request: "View my requests"
+        redirect_to: "Move"
+  devise:
+    sign_up: "Sign up"
+    sign_in: "Sign in"
+  datatables:
+    lengthMenu1: "Display "
+    lengthMenu2: " records per page"
+    info1: "Showing page "
+    info2: " of "
+    paginate:
+      first: "First"
+      last:  "Last"
+      next:  "Next"
+      previous: "Previous"

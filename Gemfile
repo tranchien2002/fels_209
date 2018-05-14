@@ -28,6 +28,7 @@ gem "jquery-rails", "~> 4.3", ">= 4.3.1"
 gem "jquery-ui-rails"," ~> 5.0"
 gem "i18n-js"
 gem "i18n"
+gem "font-awesome-rails"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console

@@ -1,1 +1,58 @@
 vi:
+  views:
+    button:
+      edit_confirm: "Bạn có chắc chắn "
+      done: "Xác nhận"
+      cancel_account: "Hủy tài khoản"
+      back: "Quay lại"
+    admin:
+      id: "Mã"
+      users:
+        password_edit: "Chúng tôi cần mật khẩu của bạn để xác thực thay đổi"
+        find_error: "Không tìm thấy người dùng với mã: "
+        create: "Tạo người dùng "
+        edit: "Sửa thông tin"
+        name: "Tên"
+        role: "Chức vụ"
+        email: "Email"
+        created_at: "Thời gian đăng ký"
+        delete: "Xóa"
+      category:
+        find_error: "Không tìm thấy thể loại với mã:  "
+        create: "Tạo thể loại"
+        edit: "Sửa"
+        name: "Tên"
+        created_at: "Thời gian được tạo"
+        delete: "Delete"
+    layouts:
+      success: "Thành công"
+      fail: "Thất bại"
+      search_form:
+        placeholder1: "Nhập tên hoặc email...."
+        placeholder2: "Nhập chủ đề hoặc lĩnh vực ..."
+        submit: "Tìm"
+      header:
+        signin: "Đăng nhập"
+        signout: "Đăng xuất"
+        signup: "Đăng ký"
+        profile: "Hồ sơ"
+        notification: "Thông báo"
+        vi: "Tiếng Việt"
+        en: "Tiếng Anh"
+        language: "Ngôn ngữ"
+        create_request: "Tạo yêu cầu"
+        view_request: "Xem các yêu cầu của tôi"
+        redirect_to: "Chuyển đến"
+  devise:
+    sign_up: "Đăng ký"
+    sign_in: "Đăng nhập"
+  datatables:
+    lengthMenu1: "Hiển thị "
+    lengthMenu2: " bản ghi mỗi trang"
+    info1: "Hiển thị trang "
+    info2: " của "
+    paginate:
+      first: "Đầu"
+      last:  "Cuối"
+      next:  "Tiếp"
+      previous: "Trước"
